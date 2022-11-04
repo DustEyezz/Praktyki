@@ -1,12 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>project</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body>
-    <h1>
-        I hate it here
-    </h1>
-</body>
+<HTML>
+<HEAD>
+    <TITLE>Test Input</TITLE>
+    <link rel="stylesheet" href="mystyle.css">
+    <SCRIPT LANGUAGE="JavaScript">
+    function testResults (form) {
+        var TestVar = form.inputbox.value;
+        alert ("You typed: " + TestVar);
+    }
+    </SCRIPT>
+</HEAD>
+<BODY>
+    <FORM NAME="myform" ACTION="" METHOD="GET">Enter something in the box: <BR>
+        <INPUT TYPE="text" NAME="inputbox" VALUE=""><P>
+        <INPUT TYPE="button" NAME="button" Value="Click" onClick="testResults(this.form)">
+    </FORM>
+</BODY>
+</HTML>
