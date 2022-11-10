@@ -5,10 +5,15 @@
     <SCRIPT src="myscript.js" LANGUAGE="JavaScript"></SCRIPT>
 </HEAD>
 <BODY>
-    <FORM NAME="myform" ACTION="" METHOD="GET">Enter something in the box: <BR>
+    <FORM NAME="calculatorForm" ACTION="" METHOD="GET">Enter something in the box: <BR>
         <INPUT TYPE="text" NAME="inputbox" VALUE=""><P>
-        <INPUT TYPE="button" NAME="button" Value="Click" onClick="handleForm(this.form)">
+        <INPUT TYPE="button" NAME="button" Value="Click" onClick="handleCalculatorForm(this.form)">
     </FORM>
-    <textarea id="mytext"></textarea>
+    <div id="calcResult"></div>
+    <FORM NAME="anagramForm" ACTION="" METHOD="GET">Enter something in the box: <BR>
+        <INPUT TYPE="text" NAME="inputbox2" VALUE=""><P>
+        <INPUT TYPE="button" NAME="button2" Value="Click" onClick="handleAnagramForm(this.form)">
+    </FORM>
+    <div id="anagramResult"></div>
 </BODY>
 </HTML>
