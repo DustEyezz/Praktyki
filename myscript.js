@@ -1,6 +1,6 @@
 function handleCalculatorForm(form){
     let toDisplay = form.inputbox.value;
-    document.getElementByIsd("calcResult").innerHTML = toDisplay;
+    document.getElementById("calcResult").innerHTML = toDisplay;
 }
 
 function handleAnagramForm(form){
