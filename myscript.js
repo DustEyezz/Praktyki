@@ -82,6 +82,32 @@ function anagram(var1, var2) {
     return flag;
 }
 
+function tower(n, sourcePole, destinationPole, auxiliaryPole) {
+    if(0 == n)
+    return;
+
+    tower(n - 1, sourcePole, auxiliaryPole, destinationPole);
+
+    console.log("Move the disk " + n + " from " +
+    sourcePole + " to " + destinationPole);
+
+    tower(n - 1, auxiliaryPole, destinationPole,sourcePole);
+}
+
+tower(4, 'A', 'C', 'B');
+
+function fibonacci (n){
+    if (n < 2){
+        return n;
+    }
+    else {
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+}
+
+console.log(recurse(1,5));
+console.log(0.2 + 0.1);
+console.log(fibonacci(5));
 console.log(anagram("siema", "siemb"));
 console.log("a".charCodeAt(0));
 console.log("b".charCodeAt(0));
