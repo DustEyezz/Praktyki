@@ -9,6 +9,7 @@ const books = [
     {title: '300', pages: 600, genre: 'criminology', rating: 10},
     {title: 'Renewer', pages: 472, genre: 'biology', rating: 2},
 ];
+//PRZYKŁADY:
 //tworzymy funkcje
 const filterTitleStartsWithTotal = (list) => list.filter((book) => book.title.startsWith('Total'));
 const filterGenreIsFantasy = (list) => list.filter((book) => book.genre === 'fantasy');
